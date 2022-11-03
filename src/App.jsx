@@ -1,16 +1,15 @@
 
-
-import styles from './style'
+import React from 'react';
+import styles from './style.js';
 
 import { Navbar,  Stats,  Business,  Billing,  CardDeal,
   Testimonial,  Clients,  CTA,  Footer, Hero } from './Components';
 
-const App = ()=> {
-  return (
+const App = ()=> (
     <div className="bg-primary w-full overflow-hidden">
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
-          <Navbar className="py-10"/>
+          <Navbar className="bg-slate-500"/>
         </div>
       </div>
       <div className={`bg-primary ${styles.flexStart}`}>
@@ -33,6 +32,6 @@ const App = ()=> {
 
     </div>
   )
-}
+
 
 export default App
